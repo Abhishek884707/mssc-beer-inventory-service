@@ -1,1 +1,1 @@
-# mssc-beer-inventory-service
+# Mssc Beer Inventory Service

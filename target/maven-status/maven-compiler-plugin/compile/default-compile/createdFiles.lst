@@ -1,0 +1,12 @@
+org\mourya\msscbeerinventoryservice\bootstrap\BeerInventoryBootstrap.class
+org\mourya\msscbeerinventoryservice\domain\BaseEntity.class
+org\mourya\msscbeerinventoryservice\domain\BeerInventory.class
+org\mourya\msscbeerinventoryservice\web\mapper\BeerInventoryMapper.class
+org\mourya\msscbeerinventoryservice\web\model\BeerInventoryDto.class
+org\mourya\msscbeerinventoryservice\web\mapper\DateMapper.class
+org\mourya\msscbeerinventoryservice\web\controller\BeerInventoryController.class
+org\mourya\msscbeerinventoryservice\domain\BeerInventory$BeerInventoryBuilder.class
+org\mourya\msscbeerinventoryservice\respositories\BeerInventoryRepository.class
+org\mourya\msscbeerinventoryservice\web\mapper\BeerInventoryMapperImpl.class
+org\mourya\msscbeerinventoryservice\web\model\BeerInventoryDto$BeerInventoryDtoBuilder.class
+org\mourya\msscbeerinventoryservice\MsscBeerInventoryServiceApplication.class
