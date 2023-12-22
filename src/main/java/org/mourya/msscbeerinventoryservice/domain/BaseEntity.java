@@ -1,14 +1,13 @@
 package org.mourya.msscbeerinventoryservice.domain;
 
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.UUID;
 
