@@ -1,3 +1,4 @@
+/*
 package org.mourya.msscbeerinventoryservice.bootstrap;
 
 import lombok.RequiredArgsConstructor;
@@ -15,9 +16,9 @@ public class BeerInventoryBootstrap implements CommandLineRunner {
     public static final String BEER_1_UPC = "0631234200036";
     public static final String BEER_2_UPC = "0631234300019";
     public static final String BEER_3_UPC = "0083783375213";
-    public static final UUID BEER_1_UUID = UUID.fromString("0a818933-087d-47f2-ad83-2f986ed087eb");
-    public static final UUID BEER_2_UUID = UUID.fromString("a712d914-61ea-4623-8bd0-32c0f6545bfd");
-    public static final UUID BEER_3_UUID = UUID.fromString("026cc3c8-3a0c-4083-a05b-e908048c1b08");
+    public static final UUID BEER_1_UUID = UUID.fromString("6bbd1a06-3807-4f6a-aba4-a7a6787ad0a2");
+    public static final UUID BEER_2_UUID = UUID.fromString("e5c05962-a5b7-471e-9fdb-b2b9c7ab9fa3");
+    public static final UUID BEER_3_UUID = UUID.fromString("8c6dee59-d2cc-4856-abab-16212d49a781");
 
     private final BeerInventoryRepository beerInventoryRepository;
 
@@ -33,14 +34,14 @@ public class BeerInventoryBootstrap implements CommandLineRunner {
                 .builder()
                 .beerId(BEER_1_UUID)
                 .upc(BEER_1_UPC)
-                .quantityOnHand(50)
+                .quantityOnHand(0)
                 .build());
 
         beerInventoryRepository.save(BeerInventory
                 .builder()
                 .beerId(BEER_2_UUID)
                 .upc(BEER_2_UPC)
-                .quantityOnHand(50)
+                .quantityOnHand(0)
                 .build());
 
         beerInventoryRepository.saveAndFlush(BeerInventory
@@ -53,3 +54,4 @@ public class BeerInventoryBootstrap implements CommandLineRunner {
         log.debug("Loaded Inventory. Record count: " + beerInventoryRepository.count());
     }
 }
+*/

@@ -1,6 +1,5 @@
 package org.mourya.msscbeerinventoryservice.web.controller;
 
-import com.netflix.discovery.converters.Auto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.mourya.msscbeerinventoryservice.respositories.BeerInventoryRepository;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 @Slf4j
 @RequiredArgsConstructor
