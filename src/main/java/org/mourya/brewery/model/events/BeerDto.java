@@ -1,4 +1,4 @@
-package org.mourya.common.events;
+package org.mourya.brewery.model.events;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;

@@ -2,7 +2,7 @@ package org.mourya.msscbeerinventoryservice.web.mapper;
 
 import org.mapstruct.Mapper;
 import org.mourya.msscbeerinventoryservice.domain.BeerInventory;
-import org.mourya.msscbeerinventoryservice.web.model.BeerInventoryDto;
+import org.mourya.brewery.model.BeerInventoryDto;
 
 @Mapper(uses = {DateMapper.class})
 public interface BeerInventoryMapper {

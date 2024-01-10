@@ -1,4 +1,4 @@
-package org.mourya.msscbeerinventoryservice.web.model;
+package org.mourya.brewery.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
