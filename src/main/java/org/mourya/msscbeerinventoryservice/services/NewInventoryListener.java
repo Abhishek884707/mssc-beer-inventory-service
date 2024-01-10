@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.mourya.msscbeerinventoryservice.config.JmsConfig;
 import org.mourya.common.events.NewInventoryEvent;
 import org.mourya.common.events.BeerDto;
+import org.mourya.msscbeerinventoryservice.domain.BeerInventory;
 import org.mourya.msscbeerinventoryservice.respositories.BeerInventoryRepository;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.messaging.handler.annotation.Payload;
@@ -25,11 +26,11 @@ public class NewInventoryListener {
         BeerDto beerDto = event.getBeerDto();
         log.debug("Got Inventory: " + beerDto);
 
-        /*beerInventoryRepository.save(BeerInventory.builder()
+        beerInventoryRepository.save(BeerInventory.builder()
                 .beerId(beerDto.getId())
                 .upc(beerDto.getUpc())
                 .quantityOnHand(beerDto.getQuantityOnHand())
-                .build());*/
+                .build());
     }
 
 }
