@@ -1,4 +1,4 @@
-package org.mourya.msscbeerinventoryservice.services;
+package org.mourya.msscbeerinventoryservice.services.listener;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
