@@ -1,3 +1,4 @@
+/*
 package org.mourya.msscbeerinventoryservice.bootstrap;
 
 import lombok.RequiredArgsConstructor;
@@ -53,3 +54,4 @@ public class BeerInventoryBootstrap implements CommandLineRunner {
         log.debug("Loaded Inventory. Record count: " + beerInventoryRepository.count());
     }
 }
+*/
