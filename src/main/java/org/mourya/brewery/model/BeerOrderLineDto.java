@@ -2,10 +2,7 @@ package org.mourya.brewery.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
@@ -35,6 +32,6 @@ public class BeerOrderLineDto{
     private BeerStyleEnum beerStyle;
     private UUID beerId;
     private Integer orderQuantity = 0;
-    private Integer quantityAllocated;
     private BigDecimal price;
+    private Integer quantityAllocated;
 }
