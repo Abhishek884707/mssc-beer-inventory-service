@@ -63,13 +63,17 @@ public class AllocationServiceImpl implements AllocationService {
                 inventory = inventory - qtyToAllocate;
                 beerOrderLineDto.setQuantityAllocated(orderQty);
                 beerInventory.setQuantityOnHand(inventory);
+
                 beerInventoryRepository.save(beerInventory);
             }else if(inventory > 0){ //partial allocation
                 beerOrderLineDto.setQuantityAllocated(allocatedQty+inventory);
                 beerInventory.setQuantityOnHand(0);
-                beerInventoryRepository.save(beerInventory);
             }
-        });
 
+            if(beerInventory.getQuantityOnHand() == 0){
+                beerInventoryRepository.delete(beerInventory);
+            }
+
+        });
     }
 }
